@@ -1569,7 +1569,7 @@ do
 			TextSize = 14;
 			Text = Text;
 			TextWrapped = DoesWrap or false;
-            Color = Color or Library.FontColor;
+            		TextColor3 = Color or Library.FontColor;
 			TextXAlignment = Enum.TextXAlignment.Left;
 			ZIndex = 5;
 			Parent = Container;
