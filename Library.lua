@@ -38,12 +38,12 @@ local Library = {
 
 	HudRegistry = {};
 
-	FontColor = Color3.fromRGB(255, 255, 255);
-	MainColor = Color3.fromRGB(28, 28, 28);
-	BackgroundColor = Color3.fromRGB(20, 20, 20);
-	AccentColor = Color3.fromRGB(110, 0, 255);
-	OutlineColor = Color3.fromRGB(50, 50, 50);
-	RiskColor = Color3.fromRGB(255, 50, 50),
+	FontColor = Color3.fromRGB(205, 214, 244);
+	MainColor = Color3.fromRGB(30, 30, 46);
+	BackgroundColor = Color3.fromRGB(17, 17, 27);
+	AccentColor = Color3.fromRGB(180, 190, 254);
+	OutlineColor = Color3.fromRGB(24, 24, 37);
+	RiskColor = Color3.fromRGB(243, 139, 168),
 
 	Black = Color3.new(0, 0, 0);
 	Font = Enum.Font.Code,
@@ -1558,7 +1558,7 @@ do
 		});
 	end;
 
-	function Funcs:AddLabel(Text, DoesWrap, Color)
+	function Funcs:AddLabel(Text, Color, DoesWrap)
 		local Label = {};
 
 		local Groupbox = self;
@@ -1568,8 +1568,8 @@ do
 			Size = UDim2.new(1, -4, 0, 15);
 			TextSize = 14;
 			Text = Text;
+			TextColor3 = Color or Library.FontColor;
 			TextWrapped = DoesWrap or false;
-            		TextColor3 = Color or Library.FontColor;
 			TextXAlignment = Enum.TextXAlignment.Left;
 			ZIndex = 5;
 			Parent = Container;
